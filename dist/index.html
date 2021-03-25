@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+	<title>Web3</title>  
 </head>
 <body>
-    <script src="./main.js"></script>
+  <button id="connect">Connect</button>
+  
+  <div class="content" id="content">
+    <h1>Account</h1>
+    
+    <div class="address">
+      <span>My Address:</span>
+      <span id="account"></span>
+    </div>
+
+    <form id="form">
+      <label for="recipient">Recipient</label>
+      <input id="recipient" type="text" name="recipient" required>
+
+      <label for="amount">Amount</label>
+      <input id="amount" type="amount" name="amount" placeholder="ETH" required>
+
+      <button id="send">Send</button>
+    </form>
+  </div>
+
+  <script src="./main.js"></script>
 </body>
 </html>
